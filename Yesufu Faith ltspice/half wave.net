@@ -1,0 +1,10 @@
+* C:\Users\DR YESUFU\Desktop\Yesufu Faith ltspice\half wave.asc
+V2 N001 0 SINE(0 1 100)
+D1 N001 N002 D
+R1 N002 0 10k
+C1 N002 0 100µf
+.model D D
+.lib C:\Users\DR YESUFU\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0.05
+.backanno
+.end

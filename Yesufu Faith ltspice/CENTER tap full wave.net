@@ -1,0 +1,14 @@
+* C:\Users\DR YESUFU\Desktop\Yesufu Faith ltspice\CENTER tap full wave.asc
+V1 N003 0 SINE(0 308 50)
+L1 N004 0 40µ
+L2 0 N001 40µ
+L3 N003 0 1m Rser=1
+D1 N001 N002 1N4148
+D2 N004 N002 1N4148
+R1 N002 0 10K
+.model D D
+.lib C:\Users\DR YESUFU\Documents\LTspiceXVII\lib\cmp\standard.dio
+K L3 L2 L1 1
+.tran .2
+.backanno
+.end
